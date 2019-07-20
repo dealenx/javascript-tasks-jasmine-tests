@@ -1,3 +1,4 @@
+// Скопировано с 1 задания
 function sequence(start = 0, step = 1) {
 
     let generatedFunctionSequence = generateSequence(start, step);
@@ -16,15 +17,14 @@ function sequence(start = 0, step = 1) {
     };
 }
 
+function take(gen, n) {
+    function* generateSequence(genLocal, end) {
+        for (let i = 0; i < end; i++) {
+            yield genLocal();
+        }
+    }
+    return [...generateSequence(gen, n)];
+}
 
-var generator = sequence(10, 3);
-var generator2 = sequence(7, 1);
-
-console.log(generator()); // 10
-console.log(generator()); // 13
-
-console.log(generator2()); // 7
-
-console.log(generator()); // 16
-
-console.log(generator2()); // 8
+var gen2 = sequence(0, 2);
+console.log(take(gen2, 5)); // [0, 2, 4, 6, 8 ]
