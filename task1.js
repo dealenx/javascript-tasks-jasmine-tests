@@ -4,10 +4,11 @@ function sequence(start = 0, step = 1) {
 
     function* generateSequence(startSeq, stepSeq) {
         let sum = startSeq;
-        yield startSeq;
+        
         while (true) {
-            sum += stepSeq;
+            
             yield sum;
+            sum += stepSeq;
         }
     }
 
