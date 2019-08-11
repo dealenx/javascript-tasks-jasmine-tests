@@ -1,0 +1,28 @@
+{
+  "name": "javascript-tasks-jasmine-tests",
+  "version": "1.0.0",
+  "description": "Пью кофе, решаю задачки по js и никакова суицида :)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dealenx/javascript-tasks-jasmine-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dealenx/javascript-tasks-jasmine-tests/issues"
+  },
+  "homepage": "https://github.com/dealenx/javascript-tasks-jasmine-tests#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.8.0"
+  }
+}
